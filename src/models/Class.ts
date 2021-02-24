@@ -6,15 +6,14 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
+/* Disciplina */
 @Entity('class')
 export default class Class {
+
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({
-    length: 100,
-    unique: true,
-  })
+  @Column({ length: 100, unique: true })
   name: string;
 
   @Column()
@@ -23,9 +22,10 @@ export default class Class {
   @Column()
   exp: number;
 
-  @CreateDateColumn({ name: 'created_At' })
+  @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;
 
-  @UpdateDateColumn({ name: 'update_At' })
+  @UpdateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
+  
 }
