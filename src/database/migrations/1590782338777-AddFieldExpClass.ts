@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export default class AddFieldExpClass1590782338777
-  implements MigrationInterface {
+export default class AddFieldExpClass1590782338777 implements MigrationInterface {
+  
   name = 'AddFieldExpClass1590782338777';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
